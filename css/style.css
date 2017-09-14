@@ -1,0 +1,361 @@
+/*Custom Font*/
+@font-face {
+    font-family: "Old English";
+    src: url('../font/old_english.ttf') format("truetype");
+}
+/*---End Custom Font---*/
+
+/*NavBar Style*/
+#centerNavBar{
+	text-align: center;
+	margin: auto;
+	width: 700px;
+	margin-top: 25px;
+}
+#title { 
+    font-family: "Old English";
+    font-size: 80px;
+}
+#siteMaster {
+	font-family: "Old English";
+	color: white;
+	font-size: 20px;
+	margin-top: -30px;
+	margin-left: 580px;
+}
+#searchNavBarInput{
+	background-image: url("../images/search.png");
+	background-size: 6%;
+	background-repeat: no-repeat;
+	background-position: right center;
+	width: 400px; 
+	text-align: center; 
+	font-size: 16px; 
+	border-radius: 0px
+	z-index: 1;
+}
+#searchNavBarDiv{
+	width: 400px;
+	margin: auto;
+}
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+  background: #d34306;
+}
+.navbar-nav > li {
+  float: none;
+  display: inline-block;
+}
+#navBar a {
+  color: #110601;
+  font-family: Helvetica Neue;
+  font-size: 22px;
+  line-height: 55px;
+  text-decoration: none;
+}
+#navBar a:hover {
+  color: white;
+  text-decoration: none;
+}
+#navBar{
+	margin-top: 10px;
+}
+/*---End NavBar Style---*/
+
+/*Inventory Page Style*/
+#inventoryDiv{
+	text-align: center;
+	font-family: Helvetica Neue;
+	background: url('../images/background.jpg');
+	background-size: 100%;
+	padding-bottom: 25px;
+	padding-top: 5px;
+}
+#inventoryDiv div:nth-of-type(1){
+	display: inline-block;
+}
+#guitarImageDiv{
+	width: 310px;
+	height: 310px;
+	margin-top: 5px;
+	background: #ff8080;
+	border-radius: 50%;
+	border: 2px solid white; 
+}
+#priceDiv{
+	width: 100px;
+	font-size: 25px;
+	background: #ffe066;
+	margin-top: 70px;
+	border-radius: 20%;
+	position: absolute;
+}
+#nextPrevButtonDiv{
+	width: 310px;
+	margin: auto;
+	margin-top: 5px;
+}
+#nextButton, #prevButton{
+	background-color: #ffcc00;
+	border-radius: 5px;
+	height: 30px;
+	font-size: 16px;
+	width: 100px;
+	font-weight: bold;
+}
+#nextButton{
+	float: right;
+}
+#prevButton{
+	float: left;
+}
+#productInfoDiv{
+	width: 800px;
+	height: 150px;
+	border: 2px solid white;
+	margin: auto;
+	border-radius: 0px 0px 80px 0px;
+	margin-top: 50px;
+	background: #00cc66;
+	text-align: left;
+	font-size: 18px;
+	padding: 5px;
+}
+#prevButton:disabled, #nextButton:disabled{
+	background-color: #ffeb99;
+}
+#shippingDetailsDiv{
+	width: 800px;
+	height: 80px;
+	border: 2px solid white;
+	border-radius: 0px 80px 80px 0px;
+	margin: auto;
+	background: #1aff8c;
+	margin-top: 10px;
+	text-align: left;
+	font-size: 18px;
+	padding: 5px;
+}
+#customerReviewsDiv{
+	width: 800px;
+	height: 150px;
+	border: 2px solid white;
+	border-radius: 0px 80px 0px 0px;
+	margin: auto;
+	background: #66ffb3;
+	margin-top: 10px;
+	text-align: left;
+	font-size: 18px;
+	padding: 5px;
+}
+.detailHeaderText{
+	font-weight: bold;
+	font-size: 20px;
+	color: #994d00;
+}
+#reviewStar{
+	position: absolute;
+	margin-left: 160px;
+}
+#buyButton{
+	background-image: url("../images/cart.png");
+	background-size: 15%;
+	background-repeat: no-repeat;
+	background-position: 160px center;
+	background-color: #ffcc00;
+	border-radius: 5px;
+	height: 40px;
+	font-size: 20px;
+	width: 200px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+/*---End Inventory Page Style---*/
+
+/*Customer Info Style*/
+#cartGuitarImageDiv{
+	width: 210px;
+	height: 210px;
+	background: #66ccff;
+	border-radius: 50%;
+	border: 2px solid white;
+	margin-left: 35%;
+}
+.cartHeaderText{
+	color: white;
+	text-align: center;
+}
+#totalGuitarCostDiv{
+	width: 210px;
+	height: 210px;
+	border: 2px solid white;
+	margin-left: 50%;
+	margin-top: -12%;
+	background: #cc66ff;
+	border-radius: 50%;
+	text-align: center;
+}
+#shippingFormDiv{
+	margin: auto;
+	text-align: center;
+}
+#totalCostText{
+	font-size: 25px;
+	margin-top: 15px;
+	font-weight: bold;
+}
+.cartPrice{
+	font-size: 18px;
+}
+#cartTotalCost{
+	font-size: 22px;
+	margin-top: -15px;
+	font-weight: bold;
+	color: #14141f;
+}
+#customerInfoDiv{
+	font-family: Helvetica Neue;
+	background: url('../images/background_1.jpg');
+	background-size: 100% 710px;
+	padding-bottom: 25px;
+	padding-top: 1px;
+}
+#phoneNum1, #phoneNum2, #phoneNum3 {
+	background-image: url("../images/phone.png");
+	background-size: 25%;
+	background-repeat: no-repeat;
+	background-position: right center;
+	width: 100px; 
+	text-align: center; 
+	font-size: 16px; 
+	margin-top: 10px; 
+	border-radius: 0px; 
+}
+#fname, #lname{
+	width: 300px; 
+	text-align: center; 
+	font-size: 16px;  
+	border-radius: 0px;
+}
+#email, #address, #emailLogin{
+	width: 605px; 
+	text-align: center; 
+	font-size: 16px; 
+	margin-top: 10px; 
+	border-radius: 0px
+}
+#city, #zipcode{
+	width: 225px;
+	text-align: center;
+	font-size: 16px;
+	margin-top: 10px;
+	border-radius: 0px;
+}
+#zipcode{
+	margin-left: 5px;
+}
+#state{
+	width: 145px;
+	text-align: center;
+	font-size: 16px;
+	margin-top: 10px;
+	border-radius: 0px;
+	margin-left: 5px;	
+}
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+#reviewOrder{
+	background-color: #ffcc00;
+	border-radius: 4px;
+	height: 40px;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	width: 200px;
+	margin-top: 20px;
+}
+#reviewAndBuyDiv{
+	height: 300px;
+	width: 600px;
+	background: rgba(255, 255, 255, 0.7);
+	margin: auto;
+	margin-top: 35px;
+	padding-top: 5px;
+}
+#shippingInfoText{
+	text-align: center;
+	color: #3333ff;
+	font-size: 30px;
+}
+#editButton{
+	background-color: #ffcc00;
+	border-radius: 4px;
+	height: 30px;
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+	width: 80px;
+	margin-left: 500px;
+	position: absolute;
+	margin-top: -48px;
+	
+}
+#userEnteredInfo, #confirmUserAddressDiv{
+	text-align: center;
+	font-size: 25px;
+	color: black;
+	line-height: 0.8;
+}
+#buy{
+	background-color: #00cc00;
+	border-radius: 4px;
+	height: 40px;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	width: 200px;
+	margin-top: 10px;
+}
+/*---Customer Info Style End---*/
+
+/*Confirmation Style*/
+#confirmationDiv{
+	font-family: Helvetica Neue;
+	background: url('../images/background_2.jpg');
+	background-size: 100% 730px;
+	padding-bottom: 25px;
+	padding-top: 1px;
+	text-align: center;
+	color: black;
+}
+#confirmGuitarImageDiv{
+	width: 310px;
+	height: 310px;
+	background: #ffff66;
+	border-radius: 50%;
+	border: 2px solid white;
+	margin: auto;
+}
+#confirmHeaderText{
+	color: black;
+}
+#confirmAddressDiv{
+	width: 600px;
+	height: 300px;
+	background: rgba(255, 255, 255, 0.7);
+	margin: auto;
+	padding: 5px;
+	margin-top: 15px;
+}
+#confirmAddressDiv p:nth-of-type(1){
+	text-align: center;
+	color: black;
+	font-size: 30px;
+}
+#confirmTotalCost{
+	font-size: 34px;
+	color: #cc3300;
+}
+/*---Confirmation Style End---*/

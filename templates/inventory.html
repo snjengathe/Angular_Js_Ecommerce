@@ -1,0 +1,33 @@
+<div id="inventoryDiv">
+	<!-- Guitar Picture Slideshow -->
+	<div id="guitarImageDiv">
+		<div id="priceDiv">
+			{{guitarData[index].price | currency}}
+		</div>
+		<img ng-src="../images/{{guitarData[index].image_path}}" height="300px" width=300"">
+	</div>
+	<!-- Next and Previous Button -->
+	<div id="nextPrevButtonDiv">
+		<button id="nextButton" ng-click="goNext()" ng-disabled="nextDisable">Next</button>
+		<button id="prevButton" ng-click="goPrev()" ng-disabled="prevDisable">Previous</button>
+	</div>
+	<!-- Product Description -->
+	<div id="productInfoDiv">
+		<p class="detailHeaderText">Product Description</p>
+		{{guitarData[index].product_description}}
+	</div>
+	<!-- Shipping Details -->
+	<div id="shippingDetailsDiv">
+		<p class="detailHeaderText">Shipping Details</p>
+		{{guitarData[index].shipping_details}}
+	</div>
+	<!-- Customer Reviews -->
+	<div id="customerReviewsDiv">
+		<img src="../images/star.png" height="30px" id="reviewStar">
+		<p class="detailHeaderText">Customer Review</p>
+		<p>{{guitarData[index].customer_reviews}}</p>
+	</div>
+	<!-- Buy Button -->
+	<button id="buyButton" ng-click="addCart()">Add to Cart</button>
+</div>
+

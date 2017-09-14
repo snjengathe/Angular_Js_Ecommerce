@@ -1,0 +1,16 @@
+<div id="confirmationDiv">
+	<h1 id="confirmHeaderText">Thank You For Your Purchase</h1>
+	<!-- Purchased Guitar Picture -->
+	<div id="confirmGuitarImageDiv">
+		<img ng-src="../images/{{guitarData[index].image_path}}" height="300px" width=300px"">
+	</div>
+	<div id="confirmAddressDiv">
+		<p>Shippping Address Confirmed</p>
+		<div id="confirmUserAddressDiv">
+			<p>{{fName}} {{lName}}</p>
+			<p>{{address}}</p>
+			<p>{{city}}, {{state}} {{zipcode}}</p><br><br>
+			<p id="confirmTotalCost">Total Amount Charged: <strong>{{total | currency}}</strong></p>
+		</div>
+	</div>
+</div>

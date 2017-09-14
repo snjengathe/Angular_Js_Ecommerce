@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body ng-app="GuitarWebsiteApp" class="container-fluid">
+
+	<nav class="navbar navbar-default" role="navigation" id="navBar">
+		<div>
+			<ul class="nav navbar-nav">
+				<li><a href="#"><img src="images/navbar_logo.png" height="120px"></a></li>
+				<div id="centerNavBar">
+					<li><a href="#"><span id="title">The Guitar Store</span></a></li>
+					<div id="siteMaster">By Shashank</div>
+					<!-- Search -->
+					<div id="searchNavBarDiv">
+						<input type="text" class="form-control" placeholder="Enter Keywords, item # or Catalog #" id="searchNavBarInput"><br>
+					</div>
+				</div>
+			</ul>
+		</div>
+	</nav>
+	<!--Route View Placeholder-->
+	<div ng-view></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+	<script src="framework/route.js"></script>
+	<script src="javascript/app.js"></script>
+</body>
+</html>

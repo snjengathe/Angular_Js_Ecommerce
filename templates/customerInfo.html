@@ -1,0 +1,59 @@
+<div id="customerInfoDiv">
+	<h2 class="cartHeaderText">Shopping Cart</h2>
+	<!-- Guitar That is Added to Cart -->
+	<div id="cartGuitarImageDiv">
+		<img ng-src="../images/{{guitarData[index].image_path}}" height="200px" width=200px"">
+	</div>
+	<div id="totalGuitarCostDiv">
+		<p id="totalCostText">Cart Total</p>
+		<p class="cartPrice">Guitar Price: {{guitarData[index].price | currency}}</p>
+		<p class="cartPrice">Shippping: {{guitarData[index].shipping_details | getShippingCost | currency}}</p>
+		<hr style="width: 100px">
+		<p id="cartTotalCost">{{total(index) | currency}}</p>
+	</div>
+	
+	<!-- User Shipping Information -->
+	<h2 class="cartHeaderText" ng-hide="shippingInfo">Shipping Information</h2>
+	<div class="input-group" id="shippingFormDiv" ng-hide="shippingInfo">
+		<!-- First Name -->
+		<input type="text" class="form-control" id="fname" placeholder="Frist Name" ng-model="fName">
+
+		<!-- Last Name -->
+		<input type="text" class="form-control" placeholder="Last Name" id="lname" style="margin-left: 5px;" ng-model="lName"><br>
+
+		<!-- Email -->
+		<input type="text" class="form-control" placeholder="Email Address" id="email" ng-model="email"><br>
+
+		<!-- Phone Number -->
+		<input type="text" size="3" class="form-control" id="phoneNum1" placeholder="###" style="margin-left: 150px" ng-model="phoneFirst3">
+		<input type="text" size="3" class="form-control" id="phoneNum2" placeholder="###" style="margin-left: 5px" ng-model="phoneSecond3">
+		<input type="text" maxlength="4" size="4" class="form-control" id="phoneNum3" placeholder="####" style="margin-left: 5px;" ng-model="phoneLast4"><br>
+
+		<!-- Address -->
+		<input type="text" class="form-control" placeholder="Street Address" id="address" ng-model="address"><br>
+		<input type="text" class="form-control" id="city" placeholder="City" ng-model="city">
+		<input type="text" class="form-control" id="state" placeholder="State" ng-model="state">
+		<input type="text" class="form-control" id="zipcode" placeholder="Zipcode" ng-model="zipcode"><br>
+
+		<!-- Review Order Button -->
+		<button ng-click="reviewOrder()" id="reviewOrder">Review Order</button>
+	</div>
+
+	<!-- Review Order and Buy Button -->
+	<div id="reviewAndBuyDiv" ng-hide="reviewAndBuy">
+		<p id="shippingInfoText">Your Shipping Info</p>
+		<!-- Edit User Info Button -->
+		<button id="editButton" ng-click="edit()">Edit</button>
+		<div id="userEnteredInfo">
+			<p>{{fName}} {{lName}}</p>
+			<p>{{address}}</p>
+			<p>{{city}}, {{state}} {{zipcode}}</p><br>
+			<p>Phone: {{phoneFirst3}}-{{phoneFirst3}}-{{phoneLast4}}</p>
+			<p>Confirmation Email: {{email}}</p>
+
+			<!-- Buy Button -->
+			<button ng-click="buy()" id="buy">Confirm Purchase</button>
+		</div>
+	</div>
+</div>
+
